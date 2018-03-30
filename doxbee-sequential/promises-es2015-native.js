@@ -7,7 +7,7 @@ try {
     throw new Error("No ES6 promises available");
 }
 
-require('../lib/fakesP');
+require('../lib/fakesp1');
 
 module.exports = function upload(stream, idOrPath, tag, done) {
     var blob = blobManager.create(account);
@@ -35,7 +35,7 @@ module.exports = function upload(stream, idOrPath, tag, done) {
             var splitPath = idOrPath.split('/');
             var fileName = splitPath[splitPath.length - 1];
             var newId = uuid.v1();
-            return self.createQuery(idOrPath, {
+            return self.createQueryP(idOrPath, {
                 id: newId,
                 userAccountId: userAccount.id,
                 name: fileName,

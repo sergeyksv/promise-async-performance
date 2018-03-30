@@ -1,5 +1,5 @@
 global.useNative = true;
-require('../lib/fakesP');
+require('../lib/fakesp1');
 
 module.exports = async function upload(stream, idOrPath, tag, done) {
      try {
@@ -27,7 +27,7 @@ module.exports = async function upload(stream, idOrPath, tag, done) {
                 name: fileName,
                 version: version.id
             }
-            var query = await self.createQuery(idOrPath, file);
+            var query = await self.createQueryP(idOrPath, file);
             await query.execWithin(tx);
         }
         await FileVersion.insert({fileId: file.id, versionId: version.id})
