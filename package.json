@@ -7,6 +7,7 @@
     "async": "^2.3.0",
     "bluebird": "^3.5.0",
     "optimist": "^0.6.1",
+    "safe": "^0.4.6",
     "text-table": "^0.2.0"
   },
   "devDependencies": {},
