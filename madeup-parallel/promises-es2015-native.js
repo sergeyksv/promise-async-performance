@@ -7,7 +7,7 @@ try {
     throw new Error("No ES6 promises available");
 }
 
-require('../lib/fakesP');
+require('../lib/fakesp1');
 
 module.exports = function upload(stream, idOrPath, tag, done) {
     var queries = new Array(global.parallelQueries);

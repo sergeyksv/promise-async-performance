@@ -1,5 +1,5 @@
 global.useNative = true;
-require('../lib/fakesP');
+require('../lib/fakesp1');
 
 module.exports = async function upload(stream, idOrPath, tag, done) {
     var queries = new Array(global.parallelQueries);
